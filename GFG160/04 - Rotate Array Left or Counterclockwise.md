@@ -1,0 +1,13 @@
+This problem asks you to rotate the array counterclockwise by a certain number of places.
+
+This problem is admittedly hard for me to wrap my head around. It doesn't help that one of the proposed solutions is an algorithm I'm not familiar with, but it's the purpose of these retrospectives to be able to break down and synthesize the sol;utions instead of blindly copying them. That being said, every solution except for the last one was hard for me to fully wrap my head around.
+
+The first solution proposed was to use two loops to rotate the array to the left. I immediately dismissed it due to it being a nested loop. Not that I've completely glossed over how the code is written... I've just been trained to avoid nested loops wherever I can. So this solution does not stick in my mind. I do think the logic in it is still important, because it does need a temporary variable. A very simple solution to the problem of "If I do it this way, one of my variables will be lost."
+
+The next solution is to use a temporary array. This solution is easier for me to parse, but it seems to be a lot more work, in my opinion. So, with n being the length of the array, and d being the amount of places you need to move, ou need to create an entirely new array, then put the last n-d elements into the first n-d place of your original array. THEN you need to put the first d elements into the last d places of the temorary array. THEN you have to put the elements of the temporary array back into the elements of the original array. It's definitely less efficient space wise, and maybe only SLIGHTLY more efficient time wise. But, it's easy to understand, so I can give it that benifit.
+
+The juggling algorithm is not one I'm familiar with, so I'm unable to go into my thoughts for this solution that deeply here. It also does not have any example code, so it is something I will have to come back to.
+
+The last solution is to realize that rotating the array will mean that the last n-d elements will be at the front, and the first d elements will be at the front. Which means we can reverse the order of the last n-d elements, reverse the order of the first d elements, ant then reverse the ENTIRE array in order to rotate. And this is a pretty beautiful solution, except for one thing. You MUST use the two pointer method of reversal for this solution. Using math will not work. After many attempts to modify the math based solution for this problem, I eventually called it quits. Which is a shame. I really, REALLY wanted it to work, but alas. Different obstacles will require different solutions, even the "Less efficient" ones. Which I guess is appropriate, given my attitude towards the first solution given.
+
+Either way, I ended up using this solution in the end.
