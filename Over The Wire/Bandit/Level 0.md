@@ -4,6 +4,6 @@ It's very simple. All we have to do is ensure we can log into the server using t
 
 since the host is bandit.labs.overthewire.org, the port is 2220, the username is bandit0 and the password is bandit0, we simply need to type ```ssh bandit0@bandit.labs.overthewire.org -p2220```into our terminal.
 
-Once we do, we will be prompted by a password. The password (which was given to us, is ```bandit0```, so when we type that, we are officially let into the game.
+Once we do, we will be prompted by a password. The password (which was given to us), is ```bandit0```, so when we type that, we are officially let into the game.
 
 An aside thing to note for posterity, is that ssh is a more secure version of something like Telnet, and lives on port 22.
