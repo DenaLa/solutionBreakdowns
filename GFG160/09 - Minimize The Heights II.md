@@ -16,8 +16,8 @@ So in the end, our algorithm is as follows:
 1. Sort the array
 2. Set our answer to arr[length-1] - arr[0]
 3. Create a for loop that begins at index 1. Within the for loop:
-	i. If subtracting from our current index leads to a negative number, skip it.
-	ii. Compare the vaules of (arr[0]+k) and (arr[i]-k]), with (arr[i]-k]) serving as our local maximum. Whichever value is smallest is set as our new minimum.
-	iii. Compare the values of (arr[length-1]-k) with (arr[i-1] + k), with (arr[i-1] + k) serving as our local minimum. Whichever value is larger is set as our new maximum
-	iv. Compare our previous answer with our max-min. Whichever value is smaller is our new answer.
+	1. If subtracting from our current index leads to a negative number, skip it.
+	2. Compare the vaules of (arr[0]+k) and (arr[i]-k]), with (arr[i]-k]) serving as our local maximum. Whichever value is smallest is set as our new minimum.
+	3. Compare the values of (arr[length-1]-k) with (arr[i-1] + k), with (arr[i-1] + k) serving as our local minimum. Whichever value is larger is set as our new maximum
+	4. Compare our previous answer with our max-min. Whichever value is smaller is our new answer.
 4. After the for loop, return our answer.
